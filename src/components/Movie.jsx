@@ -8,18 +8,18 @@ const Movie = (props) => {
     } = props
 
     return (
-        <div id={id} className="card movie">
-            <div className="card-image waves-effect waves-block waves-light">
+        <div id={id} className='card movie'>
+            <div className='card-image waves-effect waves-block waves-light'>
                 {
                     poster === 'N/A' ? 
-                <img className="activator" src={`https://via.placeholder.com/300x450?text=${title}`} alt="fff"/>
+                <img className='activator' src={`https://via.placeholder.com/300x450?text=${title}`} alt='fff'/>
                 :
-                <img className="activator" src={poster} alt="fff"/>
+                <img className='activator' src={poster} alt='fff'/>
                 }
             </div>
-            <div className="card-content">
-                <span className="card-title activator grey-text text-darken-4">{title}</span>
-                <p>{year}<span className="right">{type}</span></p>
+            <div className='card-content'>
+                <span className='card-title activator grey-text text-darken-4'>{title}</span>
+                <p>{year}<span className='right'>{type}</span></p>
             </div>
         </div>
     )
